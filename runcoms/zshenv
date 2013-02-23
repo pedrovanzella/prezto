@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='mvim'
+export VISUAL='mvim'
 export PAGER='less'
 
 #
@@ -42,9 +42,15 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  $HOME/.rbenv/bin
   /usr/local/{bin,sbin}
   $path
 )
+
+# rbenv
+if ( which rbenv > /dev/null ); then
+	eval "$(rbenv init -)";
+fi
 
 #
 # Less
