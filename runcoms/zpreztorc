@@ -35,7 +35,7 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'osx' \
   'git' \
-  'sintax-highlighting' \
+  'syntax-highlighting' \
   'history-substring-search' \
   'archive' \
   'python' \
@@ -111,12 +111,12 @@ zstyle ':prezto:module:prompt' theme 'vanzella'
 
 # Set syntax highlighters.
 # By default main, brackets, and cursor are enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+ zstyle ':prezto:module:syntax-highlighting' highlighters \
+   'main' \
+   'brackets' \
+   'pattern' \
+   'cursor' \
+   'root'
 
 #
 # Terminal
