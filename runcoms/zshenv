@@ -44,13 +44,22 @@ typeset -gU cdpath fpath mailpath path
 path=(
   $HOME/.rbenv/bin
   /usr/local/{bin,sbin}
+  /usr/local/share/python
+  /usr/local/cuda/bin
+  /usr/local/arm-none-eabi/bin
+  /usr/local/msp430/bin
   $path
 )
 
+fpath=(
+  /usr/local/share/zsh-completions
+  $fpath
+)
+
 # rbenv
-if ( which rbenv > /dev/null ); then
-	eval "$(rbenv init -)";
-fi
+#if ( which rbenv > /dev/null ); then
+#    eval "$(rbenv init -)";
+#fi
 
 #
 # Less
