@@ -115,8 +115,8 @@ zstyle ':prezto:module:prompt' theme 'vanzella'
    'main' \
    'brackets' \
    'pattern' \
-   'cursor' \
-   'root'
+   'cursor'
+#   'root' # root causes bell to go off on every keystroke on osx.
 
 #
 # Terminal
